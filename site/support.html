@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Stair Progress App Support</title>
+  <style>
+    :root {
+      --ink: #102542;
+      --muted: #5f6c7b;
+      --accent: #c16630;
+      --bg: #fffaf2;
+      --panel: #ffffff;
+      --border: rgba(16, 37, 66, 0.12);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Segoe UI", system-ui, sans-serif;
+      background: linear-gradient(135deg, #fffaf2, #f3e8d7);
+      color: var(--ink);
+    }
+
+    main {
+      max-width: 860px;
+      margin: 48px auto;
+      padding: 0 20px 48px;
+    }
+
+    article {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      padding: 32px;
+      box-shadow: 0 12px 30px rgba(16, 37, 66, 0.08);
+    }
+
+    h1, h2 {
+      margin-top: 0;
+    }
+
+    h2 {
+      margin-top: 28px;
+      color: var(--accent);
+      font-size: 1.1rem;
+    }
+
+    p, li {
+      line-height: 1.6;
+      color: var(--muted);
+    }
+
+    a {
+      color: var(--accent);
+    }
+
+    .back {
+      display: inline-block;
+      margin-bottom: 18px;
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 700;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <a class="back" href="./index.html">Back to site</a>
+    <article>
+      <h1>Support</h1>
+      <p>Support page for Stair Progress App.</p>
+
+      <h2>Contact</h2>
+      <p>Replace this with your real support email before publishing. Example: <a href="mailto:support@example.com">support@example.com</a></p>
+
+      <h2>Common issues</h2>
+      <ul>
+        <li>If the app does not open, reinstall using the latest installer.</li>
+        <li>If your recent activity looks empty, check whether local app data was removed on the device.</li>
+        <li>If you want to reset today’s entry, click today’s stair again or remove the entry from the recent days list.</li>
+      </ul>
+
+      <h2>App behavior</h2>
+      <ul>
+        <li>The app stores data locally on the device.</li>
+        <li>The app does not require an account.</li>
+        <li>One entry is tracked per calendar day.</li>
+      </ul>
+    </article>
+  </main>
+</body>
+</html>

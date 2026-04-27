@@ -1,6 +1,7 @@
 target/
 dist/
 .claude/
+tools/
 *.log
 .DS_Store
 Thumbs.db

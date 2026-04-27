@@ -1,8 +1,8 @@
-# Stair Progress
+# Habit Stair Tracker Java
 
-JavaFX desktop app for building daily habits. Each habit tracks 7-day periods — complete all 7 days to earn a badge. Backed by MySQL.
+A stair-based habit tracker built with JavaFX and MySQL, with daily progress, weekly milestones, notes, and profile badges.
 
-## Run locally (dev mode)
+## Run locally
 
 ```bash
 mvn javafx:run
@@ -12,13 +12,13 @@ mvn javafx:run
 
 The app connects to MySQL on startup and creates the database and tables automatically.
 
-| Setting  | Default           |
-|----------|-------------------|
-| Host     | `localhost`       |
-| Port     | `3306`            |
-| Database | `progress_tracker`|
-| Username | `root`            |
-| Password | `logic`           |
+| Setting  | Default            |
+|----------|--------------------|
+| Host     | `localhost`        |
+| Port     | `3306`             |
+| Database | `progress_tracker` |
+| Username | `root`             |
+| Password | `logic`            |
 
 Override with environment variables or Java system properties:
 
@@ -30,19 +30,15 @@ Override with environment variables or Java system properties:
 | `DB_USER`     | `db.user`       |
 | `DB_PASSWORD` | `db.password`   |
 
-## Build a Windows .exe
+## Build a Windows exe
 
-Requires Java 17+ (includes `jpackage`) and Maven. No extra tools needed.
+Requires Java 17+ and Maven.
 
 ```bash
-# 1. Build the fat JAR
 mvn clean package
-
-# 2. Package as a self-contained exe
 jpackage --input target --main-jar stair-progress-app-1.0.0.jar --name "StairProgress" --app-version 1.0.0 --type app-image --dest dist
 ```
 
-The exe is at `dist\StairProgress\StairProgress.exe`.
-Keep the entire `StairProgress\` folder together — the exe needs the `app\` and `runtime\` sub-folders beside it.
+The executable is generated at `dist\StairProgress\StairProgress.exe`.
 
-See `BUILD.md` for full details and rebuild steps after code changes.
+See `BUILD.md` for full build details.
